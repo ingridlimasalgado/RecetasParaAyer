@@ -71,7 +71,7 @@ nav li a, #top-redes a, footer a{
     width: 90%;
 }
 
-/* ----------------------------------video */
+/* ___________________________________video */
 #encabezado{
     position: relative;
     /* min-height: 30vh; */
@@ -87,7 +87,7 @@ nav li a, #top-redes a, footer a{
     justify-content: center;
     align-items: center;
 }
-#encabezado video{
+#encabezado video, #encabezado img{
     position: absolute;
     /* min-height: 100vh; */
     width: 80%;
@@ -98,8 +98,10 @@ nav li a, #top-redes a, footer a{
     /* background-color:rgba(255, 247, 226, 0.563); */
     background-color: var(--acetato);
     color:white;
-    /* height: 80%; */
+    
     padding: 2em;
+
+    max-width: 60%;
 
     display: flex;
     flex-direction: column;
@@ -118,7 +120,7 @@ nav li a, #top-redes a, footer a{
 }
 
 
-/*----------------------------------- A partir de acá son los menúes nav */
+/*-___________________________________ A partir de acá son los menúes nav */
 
 nav{
     font-size: 1.1em;
@@ -182,7 +184,6 @@ nav .li-img {
   }
   #menu>li{
     float: left; 
-
   }
 
   .first-li{
@@ -223,7 +224,7 @@ nav .li-img {
     /* background-color: blue; */
 }
 
-/******************************* CONTENEDOR DERECHO */
+/*___________________________________CONTENEDOR DERECHO */
 
 .cont-right{
     float:right;
@@ -231,7 +232,7 @@ nav .li-img {
     width: 30%;
 
 }
-article.cont-tip{
+article.cont-tip, article img{
     border: 1px solid var(--borde);
     margin: 20px;
     padding: 0 20px 30px;
@@ -257,7 +258,7 @@ article.cont-tip{
     height: 600px;
 }
 
-/* Categorías principales************************* */
+/* ___________________________________Categorías principales*/
 
 .card{
     width: 100%;
@@ -278,10 +279,10 @@ article.cont-tip{
 }
 .card h2{    
     color: white;
-    transition: all .3s ease-out;
+    /* transition: all .3s ease-out; */
 }
 
-.card h2:hover{
+.card h2:hover, .recipes-cont h3:hover, .cont-left .trend-cont h3:hover{
     letter-spacing: 3px; 
 }
 
@@ -291,7 +292,7 @@ article.cont-tip{
     background-size: cover;
 }
 
-.card-cont a, .trend-desc a{
+.card-cont a, .trend-desc a, .recipes-cont a{
     text-decoration: none;
     color:unset;
 }
@@ -303,7 +304,7 @@ article.cont-tip{
     gap: .7rem;
 }
 
-/* }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} lado izquierdo */
+/* ___________________________________ lado izquierdo */
 
 /* h2 principales+card */
 .patrocinadores h2, .trend-cont h2, .card h2, .cont-center h2{
@@ -328,17 +329,14 @@ article.cont-tip{
     margin: 3rem auto;
 }
 
-/* }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} Trends */
+/*___________________________________ Trends */
 .trend-cont .trend-img-cont{
 
     height: 8rem;
     width: 8rem;
     width: 200px;
-    /* overflow: hidden; */
     
     margin-right: 2rem;
-    /* box-shadow: var(--sombra); */
-    
 }
 
 .trend-cont img{
@@ -350,7 +348,10 @@ article.cont-tip{
 .trend-cont li{
     display: flex;
     margin: 2rem;
-    /* background-color: black; */
+
+    border-radius: 15px;
+    border: 1px solid rgb(170, 170, 170);
+    overflow: hidden;
     /* color: white; */
     transition: all .3s ease-out;
 }
@@ -360,21 +361,16 @@ article.cont-tip{
 }
 
 .trend-desc h3{
-    transition: all .3s ease-out;
     font-family: 'poppins';
     text-transform: uppercase;
-    
 }
 
-.trend-desc h3:hover{
-    color:green;  
-}
 .trend-desc{
     margin:auto 0;
 }
 
 
-/* ____________________________ FOOTER */
+/* ___________________________________ FOOTER */
 footer{
     margin: 0 auto;
     background-color: var(--color1);
@@ -399,4 +395,57 @@ footer p, footer ul{
     padding: 0 1rem;
     cursor: pointer;
     
+}
+/* ______________________________________ */
+/* ______________________________________ recipes */
+
+.recipes-cont{
+    /* background-color: #D38641; */
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(333px,1fr));
+    gap: .7rem;
+    
+}
+
+.recipe-card{
+    height: 30rem;
+    width: 20rem;
+    border-radius: 15px;
+    border: 1px solid rgb(170, 170, 170);
+    overflow: hidden;
+    transition: all .3s;
+
+    margin: 0 auto;
+}
+.recipe-card:hover{
+    box-shadow: var(--sombra);
+}
+
+.recipe-card-cont-img{
+    height: 66%;
+    overflow: hidden;
+}
+.recipe-card-cont-img img{
+    height: 100%; 
+}
+.recipe-card-desc{
+    text-align: center;
+    margin: 1rem;
+}
+
+.recipe-card-desc h3{
+    text-transform: uppercase;
+    border-top: 1px solid var(--borde);
+    border-bottom: 1px solid var(--borde);
+    margin: 1rem;
+}
+a{transition: all .2s;}
+
+.recipe-card-desc h3 a:hover, .trend-desc h3:hover{
+    color:var(--color1);
+}
+
+.recipe-card-desc span i{
+    margin: 0 1rem;
 }
