@@ -23,50 +23,59 @@
             <h1 id="nombre-pagina">Recetas para ayer</h1>
         </div>
     </header>
-    <nav>
-        <ul id="menu">
-            <li class="first-li"><a href="#">Categorías<img src="img/icons/down-arrow2.png" alt=""></a>
-                <ul>
-                    <li><a href="">Cumpleaños</a></li>
-                    <li><a href="">Días de flojera</a></li>
-                    <li><a href="">Recetas patrias</a></li>
-                    <li><a href="">Fin de año</a></li>
-                    <li><a href="">Para guardar</a></li>
-                    <li><a href="">Llevar al trabajo</a></li>
-                    <li><a href="">Como lo hacía mi abuela</a></li>
-                    <li><a href="">Vegetariano</a></li>
-                    <li><a href="">Desayunos</a></li>
-                    <li><a href="">Ver más categorías</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Compartí tu receta</a></li>
-            <li><a href="#">Sobre nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Ingresar</a></li>
-            <li class="li-img"><img src="img/icons/lupa.png" alt=""></li>
+
+    <nav class="animenu" role="navigation" aria-label="Menu">
+        <button class="animenu__btn" type="button">
+          <span class="animenu__btn__bar"></span>
+          <span class="animenu__btn__bar"></span>
+          <span class="animenu__btn__bar"></span>
+        </button>
+      
+        <ul class="animenu__nav">
+          <li><a href="#">Inicio</a></li>
+          <li>
+            <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Categorías</a>
+            <ul class="animenu__nav__dropdown">
+              <li><a href="">Cumpleaños</a></li>
+              <li><a href="">Días de flojera</a></li>
+              <li><a href="">Recetas patrias</a></li>
+              <li><a href="">Fin de año</a></li>
+              <li><a href="">Para guardar</a></li>
+              <li><a href="">Llevar al trabajo</a></li>
+              <li><a href="">Como lo hacía mi abuela</a></li>
+              <li><a href="">Vegetariano</a></li>
+              <li><a href="">Desayunos</a></li>
+              <li style="font-weight: bold;" ><a href="">Ver más categorías</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="#">Envianos tus recetas</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li>
+            <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Mi perfil</a>
+            <ul class="animenu__nav__dropdown" aria-label="submenu" role="menu">
+              <li><a href="#" role="menuitem">Colecciones</a></li>
+              <li><a href="#" role="menuitem">Mis recetas</a></li>
+              <li><a href="#" role="menuitem">Editar perfil</a></li>
+              <li><a href="#" role="menuitem">Cerrar sesión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div href="#" id="search-lupa">
+              <img style="width:17px;" src="../img/icons/lupa-white.png" alt="">
+            </div>
+            <div class="search">
+              <div id="cont-input" class="cont-input">
+                <input type="text" placeholder="¿Qué buscas?" id="input">
+                <img style="width:17px;" id="cancel" src="../img/icons/cancel.png" alt="">
+              </div>             
+            </div>
+          </li>
         </ul>
     </nav>
     
-    <!-- <nav id="nav-short">
-        <ul>
-            <li class="icono-menu"><img id="icono-menu"src="img/icons/menu.png" alt=""></li>
-            <li><img id="logo-nav"src="img/Logos/image604745.png" alt=""></li>
-            <li><img id="lupa-icon"src="img/icons/lupa.png" alt=""></li>
-        </ul>
-    </nav> -->
-
-    <!-- <div class="cont-menu active" id="menu">
-        <ul>
-            <li>About</li>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>More...</li>
-        </ul>
-    </div> -->
-    
     <div id="encabezado">
-        <video src="img/Logos/video_encabezado1.mp4" autoplay muted loop></video>
+        <video src="img/Video.mp4" autoplay muted loop></video>
         <div id="buscador">
             <h2>Buscá tus ingredientes o recetas:</h2>
             <input type="text" placeholder="Ej: Empanadas tucumanas">
@@ -200,6 +209,7 @@
 
 
         </section>
+        
         <div class="espacio"></div>
         
     </main>
@@ -228,6 +238,29 @@
             // document.documentElement.scrollTop = 0;
         }
 
+        // nav responsive
+        const despegable= document.querySelector('.animenu__btn');
+          const menuD=document.querySelector('.animenu__nav');
+
+          despegable.addEventListener('click', (e)=>{
+            despegable.classList.toggle("animenu__btn--active");
+            menuD.classList.toggle("animenu__nav--active");
+          });
+          
+          // Buscador
+          const search= document.querySelector('#cont-input');
+          const lupa= document.querySelector('#search-lupa');
+
+            lupa.addEventListener('click', (e)=>{
+              search.classList.toggle('appear');
+          })
+
+          const cancel=document.querySelector('#cancel');
+          const input= document.querySelector('#input');
+          
+          cancel.addEventListener('click', (e) => {
+              input.value='';
+          })
     </script>
     <!-- <script>
         const iconoMenu=document.querySelector('#icono-menu');
