@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index2</title>
+    <title>Ver todas las categorías</title>
     <script src="https://kit.fontawesome.com/97fdee9dd5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -32,10 +32,11 @@
         </button>
       
         <ul class="animenu__nav">
-          <li><a href="#">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li>
             <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Categorías</a>
             <ul class="animenu__nav__dropdown">
+                <li><a href="">Internacionales</a></li>
               <li><a href="">Cumpleaños</a></li>
               <li><a href="">Días de flojera</a></li>
               <li><a href="">Recetas patrias</a></li>
@@ -45,7 +46,7 @@
               <li><a href="">Como lo hacía mi abuela</a></li>
               <li><a href="">Vegetariano</a></li>
               <li><a href="">Desayunos</a></li>
-              <li style="font-weight: bold;" ><a href="categorias-all.html">Ver más categorías</a></li>
+              <li style="font-weight: bold;" ><a href="">Ver más categorías</a></li>
             </ul>
           </li>
           
@@ -74,19 +75,62 @@
         </ul>
     </nav>
     
-    <div id="encabezado">
-        <video src="img/Video.mp4" autoplay muted loop></video>
-        <div id="buscador">
-            <h2>Buscá tus ingredientes o recetas:</h2>
-            <input type="text" placeholder="Ej: Empanadas tucumanas">
-        </div> 
-    </div>
-
     <main class="cont-all">
 
         <section class="cont-center">
-            <h2>Categorías principales</h2>
+            <h2>Categorías</h2>
             <div class="card-cont">
+                <div class="card" style="background-image: url(img/o_cumpleaños.jpg);">
+                    <div class="cover">
+                        <h2><a href="#">Cumpleaños</a></h2>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/o_patrias.jpg);">
+                    <div class="cover">
+                        <h2><a href="#">Patrias</a></h2>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/o_internacional.jpg);">
+                    <div class="cover">
+                        <h2><a href="#">Internacionales</a></h2>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/o_abuela.jpg);">
+                    <div class="cover">
+                        <h2><a href="#">Recetas de la abuela</a></h2>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/o_desayuno.jpg);">
+                    <div class="cover">
+                        <h2><a href="#">Desayunos</a></h2>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/o_finaño.jpg);">
+                    <div class="cover">
+                        <h2><a href="#">Fin de año</a></h2>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/o_guardar.jpeg);">
+                    <div class="cover">
+                        <h2><a href="#">Para guardar</a></h2>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/o_flojera.jpg);">
+                    <div class="cover">
+                        <h2><a href="#">Días de flojera</a></h2>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/o_vegetariano.jpg);">
+                    <div class="cover">
+                        <h2><a href="#">Vegetariano</a></h2>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url(img/o_trabajo.jpg);">
+                    <div class="cover">
+                        <h2><a href="#">Para llevar al trabajo</a></h2>
+                    </div>
+                </div>
+                
                 <div class="card" style="background-image: url(img/opcion_5minutos.jpg);">
                     <div class="cover">
                         <h2><a href="menu-recipes.html">En 5 minutos</a></h2>
@@ -121,94 +165,6 @@
            
         </section>
 
-        <section class="cont-left">
-            <div class="trend-cont">
-                <h2>Recetas más vistas</h2>
-                <ul>
-                    <li>
-                        <div class="trend-img-cont">
-                            <img src="img/recetas/receta-ejemplo-800x483.jpg" alt="">
-                        </div>
-                        <div class="trend-desc">
-                            <h3><a href="#">Tostadas francesas</a></h3>
-                            <p>por Peter</p>
-                        </div>
-                        
-                    </li>
-                    <li>
-                        <div class="trend-img-cont">
-                            <img src="img/recetas/receta-ejemplo-5.jpg" alt="">
-                        </div>
-                        <div class="trend-desc">
-                            <h3><a href="#">Tostadas francesas</a></h3>
-                            <p>por Peter</p>
-                        </div>
-                        
-                    </li>
-                    <li>
-                        <div class="trend-img-cont">
-                            <img src="img/recetas/receta-ejemplo-3.jpg" alt="">
-                        </div>
-                        <div class="trend-desc">
-                            <h3><a href="#">Tostadas francesas</a></h3>
-                            <p>por Peter</p>
-                        </div>
-                        
-                    </li>
-                </ul>
-            </div>
-
-            <div class="patrocinadores">
-                <h2>Patrocinado por: </h2>
-                <ul>
-                    <li><img src="img/Logos/logo_jpmorgan.png" alt="logoJPMorgan"></li>
-                    <li><img src="img/Logos/logo_palmero.png" alt="logoPalmero"></li>
-                    <li><img src="img/Logos/logo_pescar-2-1.png" alt="logoPescar"></li>
-                </ul>
-            </div>
-    
-        </section>
-        
-        <section class="cont-right">
-            <article class="cont-tip">
-                <h3>Sé creativo</h3>
-                <div class="cont-text">
-                    Si no querés más platos aburridos, siempre ten a mano una vinagreta de tu gusto, especias o hierbas aromáticas.
-                </div>
-            </article>
-            <article class="cont-tip">
-                <h3>¡No desperdicies!</h3>
-                <div class="cont-text">
-                    Los huesos o restos de las verduras te sirven para hacer un caldo después y usarlos donde quieras.
-                </div>
-            </article>
-            <article class="cont-tip">
-                <h3>¿Menú semanal?</h3>
-                <div class="cont-text">
-                    Prepara un menú, la organización te ahorrará tiempo en la cocina y en el supermercado.
-                </div>
-            </article>
-            <article class="cont-tip">
-                <h3>Huevos hervidos</h3>
-                <div class="cont-text">
-                    Agregá un chorrito de vinagre para pelarlos más rápido.
-                </div>
-            </article>
-            <article class="cont-tip">
-                <h3>No los laves</h3>
-                <div class="cont-text">
-                    Carnes o pollos NO SE LAVAN, entrarían bacterias, no pierdas el tiempo. 
-                </div>
-            </article>
-            <article class="cont-tip">
-                <h3>Afilá tus cuchillos</h3>
-                <div class="cont-text">
-                    Cuando lo hagas y cortes, te vas a decir  "¿por qué no lo hice antes?"
-                </div>
-            </article>
-
-
-        </section>
         
         <div class="espacio"></div>
         
@@ -236,7 +192,6 @@
             <p onclick="goUp()" id="to-top">Subir <i class="fa-solid fa-angles-up"></i></p>
         </div>
     </footer>
-
     <script>
         // const upbtn = document.getElementById("#to-top");
         function goUp(){
@@ -270,26 +225,6 @@
               input.value='';
           })
     </script>
-    <!-- <script>
-        const iconoMenu=document.querySelector('#icono-menu');
-        const menu=document.querySelector('#menu');
 
-        iconoMenu.addEventListener('click', (e) => {
-            
-            //Estilos para el menú y el body
-            menu.classList.toggle('active');
-            document.body.classList.toggle('opacity');
-
-            //Alternamos atributo src para el icon
-            const rutaActual = e.target.getAttribute('src');
-
-            if(rutaActual == 'img/icons/menu.png'){
-                e.target.setAttribute('src', 'img/Logos/image604745.png');
-            } else{
-                e.target.setAttribute('src', 'img/icons/menu.png');
-            }
-        }
-        );
-    </script> -->
 </body>
 </html>
