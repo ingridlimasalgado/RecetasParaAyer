@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+:root{
+    --fondo: rgb(255, 244, 214);
+    --borde: rgba(231, 205, 218);
+    --borde: #B9A184;
+    --acetato: rgba(0, 0, 0, 0.498);
+    --sombra: 3px 3px 8px 0px rgba(0,0,0,1);
+    --color1: #D38641;
+    --color2:  rgb(255, 232, 215);
+    --color3: #fedfbc;
+    --bordo: rgb(108, 0, 0);
+}
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+/*.body-t {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background-color: rgb(255, 244, 214);
+    font-family: 'Poppins', sans-serif;
+
+}*/
+
+.juntos {
+    display: flex;
+    /*background-color: aqua;*/
+    gap: 30px;
+    justify-content: space-around;
+    margin: 70px 0;
+}
+
+@media screen and (max-width:767px){
+    .juntos {
+        display: block;
+        
+    }
+    .texto-t {
+        margin: 0 auto;
+    }
+}
+
+.texto-t {
+    /*max-width: 390px;
+    height: 20%;
+    min-width: 40%;*/
+    width: 300px;
+    background: #D3D1D1;
+    border-radius: 10px;
+    /*margin: 80px;*/
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    padding: 50px;
+}
+
+.gracias {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mini {
+    width: 20px;
+}
+
+
+.minion {
+    width: 40px;
+    margin-top: 10%;
+}
+
+.wrapper {
+    overflow: hidden;
+    /*max-width: 390px;*/
+    min-width: 40%;
+    background: #FFF2C0;
+    padding: 30px;
+    border-radius: 40px;
+    /*margin: 80px;*/
+    box-shadow: 0 8px 20px var(--acetato);
+}
+
+.social {
+    margin: 15px auto;
+    text-align: center;
+}
+
+.social img{
+    width: 35px;
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.wrapper .titulo-text {
+    display: flex;
+    width: 200%;
+}
+
+.wrapper .titulo-text .titulo {
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265,1.55);
+}
+
+.wrapper .form-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.form-container .slide-controls {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+  /*  border: 1px solid rgb(108, 0, 0);*/
+}
+/*font weight no funcionaa*/
+.slide-controls .slide {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.slide-controls .registrar {
+    color: #000;
+}
+
+.slide-controls .slide-tab {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 5px;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265,1.55);
+    background: var(--color1);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#registrar:checked ~ .slide-tab{
+    left: 50%;
+}
+
+#registrar:checked ~ .registrar{
+    color: #fff;
+}
+
+#registrar:checked ~ .ingresar{
+    color: #000;
+}
+
+.form-container .form-interno {
+    display: flex;
+    width: 200%;
+}
+
+.form-container .form-interno form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265,1.55);
+
+}
+
+.form-interno form .campo{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-interno form .campo input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+
+.form-interno form .campo input:focus {
+    border-color: #704545;
+}
+
+.form-interno form .pass-link{
+    margin-top: 5px;
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-top: .5rem;
+    font-size: .813rem;
+    font-weight: 600;
+    color: var(--bordo);
+}
+
+.form-interno form .pass-link a,
+.form-interno form .registrar-link a{
+    color: var(--color1);
+    text-decoration: none;
+}
+
+.form-interno form .registrar-link {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: .813rem;
+}
+
+.form-interno form .pass-link a:hover,
+.form-interno form .registrar-link a:hover{
+    text-decoration: none;
+}
+
+form .campo input[type="submit"]{
+    color: var(--color1);
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 0px;
+    border: none;
+    cursor: pointer;
+    background: var(--bordo);
+    border-radius: 2rem;
+}
+
+form .campo input[type="submit"]:hover{
+    color: var(--bordo);
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 0px;
+    border: none;
+    cursor: pointer;
+    background: var(--color1);
+}

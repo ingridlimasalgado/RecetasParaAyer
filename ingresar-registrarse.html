@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/ingresar-registrarse.css">
+    
+    <script src="https://kit.fontawesome.com/97fdee9dd5.js" crossorigin="anonymous"></script>
+    <title>Ingresar-Registrarse</title>
+</head>
+<body>
+    <div id="top-redes">
+        <ul>
+            <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="logos">
+            <img id="logo-pagina" src="img/Logos/image604745.png" alt="">
+            <h1 id="nombre-pagina">Recetas para ayer</h1>
+        </div>
+    </header>
+
+    <nav class="animenu" role="navigation" aria-label="Menu">
+        <button class="animenu__btn" type="button">
+          <span class="animenu__btn__bar"></span>
+          <span class="animenu__btn__bar"></span>
+          <span class="animenu__btn__bar"></span>
+        </button>
+      
+        <ul class="animenu__nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Categorías</a>
+            <ul class="animenu__nav__dropdown">
+                <li><a href="">Internacionales</a></li>
+              <li><a href="">Cumpleaños</a></li>
+              <li><a href="">Días de flojera</a></li>
+              <li><a href="">Recetas patrias</a></li>
+              <li><a href="">Fin de año</a></li>
+              <li><a href="">Para guardar</a></li>
+              <li><a href="">Llevar al trabajo</a></li>
+              <li><a href="">Como lo hacía mi abuela</a></li>
+              <li><a href="">Vegetariano</a></li>
+              <li><a href="">Desayunos</a></li>
+              <li style="font-weight: bold;" ><a href="">Ver más categorías</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="#">Envianos tus recetas</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li>
+            <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">
+                <img class="nav-icon" src="img/icons/profile-white.jpg" alt="">
+            </a>
+            <ul class="animenu__nav__dropdown" aria-label="submenu" role="menu">
+              <li><a href="#" role="menuitem">Colecciones</a></li>
+              <li><a href="#" role="menuitem">Editar perfil</a></li>
+              <li><a href="#" role="menuitem">Cerrar sesión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div href="#" id="search-lupa">
+              <img class="nav-icon" src="img/icons/lupa-white.png" alt="">
+            </div>
+            <div class="search">
+              <div id="cont-input" class="cont-input">
+                <input type="text" placeholder="¿Qué buscas?" id="input">
+                <img class="nav-icon" id="cancel" src="img/icons/cancel.png" alt="">
+              </div>             
+            </div>
+          </li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+    <main class="cont-all">
+        <div class="juntos">
+                <div class="texto-t">
+                    <p class="gracias">Gracias por llegar hasta acá! </p><br> 
+                    <p> Al tener tu propia cuenta vas a poder: <br><br>
+                    <img src="img/img-formulario/cora.png" class="mini" alt="minion imagen">   Guardar tus recetas favoritas <br>
+                    <img src="img/img-formulario/brillo.png" class="mini" alt="minion imagen">   Personalizar tus colecciones <br>
+                    <img src="img/img-formulario/comentario.png" class="mini" alt="minion imagen">   Dejar tus opiniones <br>
+                    <img src="img/img-formulario/guardar.png" class="mini" alt="minion imagen">   Subir tus propias recetas! 
+                    </p>
+                    <img src="img/img-formulario/fideos.png" class="minion" alt="minion imagen">
+    
+                </div>
+
+            <div class="wrapper">
+                
+                <div class="titulo-text">
+                    <div class="titulo ingresar">Gracias por volver!</div>
+                    <div class="titulo registrar">Bienvenido :)</div>
+                </div>
+                <div class="form-container">
+                    <div class="slide-controls">
+                        <input type="radio" name="slider" id="ingresar" checked>
+                        <input type="radio" name="slider" id="registrar">
+                        <label for="ingresar" class="slide ingresar">Ingreso</label>
+                        <label for="registrar" class="slide registrar">Registro</label>
+                        <div class="slide-tab"></div>
+                    </div>
+                    <div class="social">
+                        <img src="img/img-formulario/face.png" alt="logo de facebook">
+                        <img src="img/img-formulario/google.png" alt="logo de google">
+                    </div>
+                    <div class="form-interno">
+                        <form action="#" class="ingresar" id="">
+                            <div class="campo">
+                                <input type="text" placeholder="Email" required>
+                            </div>
+                            <div class="campo">
+                                <input type="password" placeholder="Contraseña" required>
+                            </div>
+                            <div class="pass-link"><a href="#">Olvidó su contraseña?</a></div>
+                    
+                            <div class="campo">
+                                <input type="submit" value="Ingresar">
+                            </div>
+                            <div class="registrar-link">No tiene cuenta? <a href="#">Registrese aquí</a> </div>
+                        </form>
+                        <form action="#" class="registrar" id="">
+                            <div class="campo">
+                                <input type="text" placeholder="Nombre" required>
+                            </div>
+                            <div class="campo">
+                                <input type="text" placeholder="Email" required>
+                            </div>
+                            <div class="campo">
+                                <input type="password" placeholder="Contraseña" required>
+                            </div>
+                            <div class="campo">
+                                <input type="password" placeholder="Confirmar Contraseña" required>
+                            </div>
+                            <div class="campo">
+                                <input type="submit" value="Registrarme">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="cont-all" >
+            <ul class="ul-copy"> 
+                <li>Copyright 2022 © Recetas para ayer <br> Todos los derechos reservados <br><br></li>
+                <li>Visita nuestras redes:  </li><br>
+                <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+            
+            <form action="" class="footer-span">
+                <label for="">
+                    Envianos un mensaje:
+                    <input type="email" placeholder="E-mail">
+                    <textarea name="textarea" maxlength="100" rows="3" cols="21" placeholder="¿Qué opinás?"></textarea>
+                    <button>Enviar</button>
+                </label>
+            </form>
+            <p onclick="goUp()" id="to-top">Subir <i class="fa-solid fa-angles-up"></i></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const ingresarForm = document.querySelector("form.ingresar")
+        const registrarForm = document.querySelector("form.registrar")
+        const ingresarBtn = document.querySelector("label.ingresar")
+        const registrarBtn = document.querySelector("label.registrar")
+        const registrarLink = document.querySelector(".registrar-link a")
+        const ingresarText = document.querySelector(".titulo-text .ingresar")
+        const registrarText = document.querySelector(".titulo-text .registrar")
+
+        registrarBtn.onclick = (()=>{
+            ingresarForm.style.marginLeft = "-50%";
+            ingresarText.style.marginLeft = "-50%";
+            ingresarText.style.opacity = "0";
+
+        });
+        ingresarBtn.onclick = (()=>{
+            ingresarForm.style.marginLeft = "0%";
+            ingresarText.style.marginLeft = "0%";
+            ingresarText.style.opacity = "1";
+        });
+        registrarLink.onclick = (()=>{
+            registrarBtn.click();
+            return false;
+        });
+    </script>
+
+<script>
+    // const upbtn = document.getElementById("#to-top");
+    function goUp(){
+        // $('html, body').animate({scrollTop:0}, 'slow');
+        window.scrollTo({top: 0, behavior: 'smooth'});
+        // document.body.scrollTop=0; //Safari??
+        // document.documentElement.scrollTop = 0;
+    }
+
+    // nav responsive
+    const despegable= document.querySelector('.animenu__btn');
+      const menuD=document.querySelector('.animenu__nav');
+
+      despegable.addEventListener('click', (e)=>{
+        despegable.classList.toggle("animenu__btn--active");
+        menuD.classList.toggle("animenu__nav--active");
+      });
+      
+      // Buscador
+      const search= document.querySelector('#cont-input');
+      const lupa= document.querySelector('#search-lupa');
+
+        lupa.addEventListener('click', (e)=>{
+          search.classList.toggle('appear');
+      })
+
+      const cancel=document.querySelector('#cancel');
+      const input= document.querySelector('#input');
+      
+      cancel.addEventListener('click', (e) => {
+          input.value='';
+      })
+      
+
+</script>
+
+</body>
+</html>
+

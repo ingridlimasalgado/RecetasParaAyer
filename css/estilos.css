@@ -609,6 +609,7 @@ footer p, footer ul{
 ::placeholder, .footer-span button{
   font-family: 'poppins';
   border: none;
+  font-size: 14px;
   
 }
 .footer-span button{
