@@ -7,11 +7,6 @@
     <title>Ver todas las categorías</title>
     <script src="https://kit.fontawesome.com/97fdee9dd5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
-    <style>
-        #nombre-pagina {
-            background-color: red;
-        }
-    </style>
 </head>
 <body>
     <div id="top-redes">
@@ -58,22 +53,23 @@
           <li><a href="#">Envianos tus recetas</a></li>
           <li><a href="#">Sobre nosotros</a></li>
           <li>
-            <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Mi perfil</a>
+            <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">
+                <img class="nav-icon" src="img/icons/profile-white.jpg" alt="">
+            </a>
             <ul class="animenu__nav__dropdown" aria-label="submenu" role="menu">
               <li><a href="#" role="menuitem">Colecciones</a></li>
-              <li><a href="#" role="menuitem">Mis recetas</a></li>
               <li><a href="#" role="menuitem">Editar perfil</a></li>
               <li><a href="#" role="menuitem">Cerrar sesión</a></li>
             </ul>
           </li>
           <li>
             <div href="#" id="search-lupa">
-              <img style="width:17px;" src="img/icons/lupa-white.png" alt="">
+              <img class="nav-icon" src="img/icons/lupa-white.png" alt="">
             </div>
             <div class="search">
               <div id="cont-input" class="cont-input">
                 <input type="text" placeholder="¿Qué buscas?" id="input">
-                <img style="width:17px;" id="cancel" src="img/icons/cancel.png" alt="">
+                <img class="nav-icon" id="cancel" src="img/icons/cancel.png" alt="">
               </div>             
             </div>
           </li>

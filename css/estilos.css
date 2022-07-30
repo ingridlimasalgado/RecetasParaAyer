@@ -206,7 +206,7 @@ nav.animenu {
   .animenu__nav > li:hover > a, 
   .animenu__nav__dropdown a:hover {
     color: var(--bordo); 
-    background-color: var(--color3);
+    background-color: var(--color1);
   }
   .animenu__nav > li:focus-within > ul {
     opacity: 1;
@@ -266,7 +266,9 @@ nav.animenu {
     color:var(--bordo);
   }
   .animenu__nav__dropdown a:hover {
-    color: var(--color1);
+    /* color: var(--color1); */
+    color: var(--bordo);
+    background-color: var(--color3);
   }
   
   @media screen and (max-width: 767px) {
@@ -368,6 +370,12 @@ nav .search {
     visibility: visible;
     right: 60px;
 }
+
+.nav-icon{
+  width:17px;
+}
+
+
 
 
 
