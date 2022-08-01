@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index2</title>
+    <link rel="stylesheet" href="css/estilos-john.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <script src="https://kit.fontawesome.com/97fdee9dd5.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top-redes">
+        <ul>
+            <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="logos">
+            <img id="logo-pagina" src="img/Logos/image604745.png" alt="">
+            <h1 id="nombre-pagina">Recetas para ayer</h1>
+        </div>
+    </header>
+
+    <nav class="animenu" role="navigation" aria-label="Menu">
+        <button class="animenu__btn" type="button">
+          <span class="animenu__btn__bar"></span>
+          <span class="animenu__btn__bar"></span>
+          <span class="animenu__btn__bar"></span>
+        </button>
+      
+        <ul class="animenu__nav">
+          <li><a href="#">Inicio</a></li>
+          <li>
+            <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Categorías</a>
+            <ul class="animenu__nav__dropdown">
+              <li><a href="">Cumpleaños</a></li>
+              <li><a href="">Días de flojera</a></li>
+              <li><a href="">Recetas patrias</a></li>
+              <li><a href="">Fin de año</a></li>
+              <li><a href="">Para guardar</a></li>
+              <li><a href="">Llevar al trabajo</a></li>
+              <li><a href="">Como lo hacía mi abuela</a></li>
+              <li><a href="">Vegetariano</a></li>
+              <li><a href="">Desayunos</a></li>
+              <li style="font-weight: bold;" ><a href="">Ver más categorías</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="#">Envianos tus recetas</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li>
+            <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Mi perfil</a>
+            <ul class="animenu__nav__dropdown" aria-label="submenu" role="menu">
+              <li><a href="#" role="menuitem">Colecciones</a></li>
+              <li><a href="#" role="menuitem">Mis recetas</a></li>
+              <li><a href="#" role="menuitem">Editar perfil</a></li>
+              <li><a href="#" role="menuitem">Cerrar sesión</a></li>
+            </ul>
+          </li>
+          <li>
+            <div href="#" id="search-lupa">
+              <img style="width:17px;" src="img/icons/lupa-white.png" alt="">
+            </div>
+            <div class="search">
+              <div id="cont-input" class="cont-input">
+                <input type="text" placeholder="¿Qué buscas?" id="input">
+                <img style="width:17px;" id="cancel" src="../img/icons/cancel.png" alt="">
+              </div>             
+            </div>
+          </li>
+        </ul>
+    </nav>
+
+    <main class="cont-all">
+
+        
+
+        <section class="cont-left main-recipe-container">
+            <div class="trend-cont">
+                <h3 id="recipe_type">Recetas de fin de mes</h3>
+                <h2 id="recipe_name">Wlaffles de arandanos</h2>
+
+                   <div class="calificacion">
+                        <div class="calificar_receta">
+                            <p>Califica esta receta </p>
+                        </div>
+                        <div>
+                            <span class="fa fa-star" onclick="calificar(this)" style="cursor: pointer;" id="estrella1"></span>
+                            <span class="fa fa-star" onclick="calificar(this)" style="cursor: pointer;" id="estrella2"></span>
+                            <span class="fa fa-star" onclick="calificar(this)" style="cursor: pointer;" id="estrella3"></span>
+                            <span class="fa fa-star" onclick="calificar(this)" style="cursor: pointer;" id="estrella4"></span>
+                            <span class="fa fa-star" onclick="calificar(this)" style="cursor: pointer;" id="estrella5"></span>
+                        </div>
+                    </div>
+                    <ul id="cont-recipe">
+                        <li class="trend-cont-center  c1">
+                            <div class="trend-main-img">
+                                <img src="img/recetas/receta-ejemplo-800x483.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="trend-cont-center  c2">
+                            <div class="trend-desc ingredients">
+                                <h3 id="title-section-ingredients">Ingredientes</h3>
+                                <div class="checkbox">
+                                    <input  type="checkbox" id="ingrediente1" onclick="tachar_ingrediente(this)"><label for="ingrediente1" id="nombre_ingrediente1">Lorem ipsum dolor sit</label>
+                                    <br>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="ingrediente2" onclick="tachar_ingrediente(this)"><label for="ingrediente2" id="nombre_ingrediente2">Lorem ipsum dolor sit</label>
+                                    <br>
+                                </div>
+                                <div class="checkbox">
+                                    <input  type="checkbox" id="ingrediente3" onclick="tachar_ingrediente(this)"><label for="ingrediente3" id="nombre_ingrediente3">Lorem ipsum dolor sit</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input  type="checkbox" id="ingrediente4" onclick="tachar_ingrediente(this)"><label for="ingrediente3" id="nombre_ingrediente4">Lorem ipsum dolor sit</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input  type="checkbox" id="ingrediente5" onclick="tachar_ingrediente(this)"><label for="ingrediente3" id="nombre_ingrediente5">Lorem ipsum dolor sit</label>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="trend-cont-center  c3">
+                            <div class="trend-desc elaboration">
+                                <h3 id="title-section-elaboration">Instrucciones</h3>
+                                <p>1. Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+                                <p>2. Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+                                <p>3. Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+                            </div>
+                        </li>
+                        <li class="trend-cont-center c4">
+                        <div class="trend-main-img">
+                            <img src="img/recetas/receta-ejemplo-3.jpg" alt="">
+                        </div>
+                    </li>
+                </ul>
+                <div class="cont-comments">
+                        <div class="comments_container">
+                        <h3 id="section-comments-title">Comentarios</h3>
+                        <label>Nombre:<input type="text"class="imput_usuario" onchange="nombre = this.value" placeholder="nombre..."></label>
+                    <div class="comentario">
+                        <textarea class="input_comentario" placeholder="comentario..." onchange="comentario = this.value"></textarea>
+                        <button onclick="crear_comentario()"><b>Enviar</b></button>
+                    </div>
+                    <div class="comentarios">
+                            <div  class="comentarios_receta">
+                                <div class="img_usuario"><img src="img/icons/img_comments.png" alt="img_comentario"></div> <div class="contenedor_comentario"><p class="nombre_usuario">Remy</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, praesentium animi cumque id possimus sit reiciendis atque at illum.</p></div>
+                            </div>
+                            <div  class="comentarios_receta">
+                                <div class="img_usuario"><img src="img/icons/img_comments.png" alt="img_comentario"></div> <div class="contenedor_comentario"><p class="nombre_usuario">Emile</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, praesentium animi cumque id possimus sit reiciendis atque at illum.</p></div>
+                            </div>
+                        <div id="comentario1" class = "comentarios_receta">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cont-right recipes-populars">
+            <h2 id="title-populares">Populares</h2>
+            <article class="cont-tip populars">
+                <h3>1° Tostadas francesas</h3>
+                <div class="cont-right-img">
+                    <a href="#"><img src="img/recetas/receta-ejemplo-3.jpg" alt=""></a> 
+                </div>
+            </article>
+            <article class="cont-tip populars">
+                <h3>2° Tostadas francesas</h3>
+                <div class="cont-right-img">
+                    <a href="#"><img src="img/recetas/receta-ejemplo-3.jpg" alt=""></a> 
+                </div>
+            </article>
+            <article class="cont-tip populars">
+                <h3>3° Tostadas francesas</h3>
+                <div class="cont-right-img">
+                    <a href="#"><img src="img/recetas/receta-ejemplo-3.jpg" alt=""></a> 
+                </div>
+            </article>
+        </div>
+    </section>
+       
+        
+        <div class="espacio"></div>
+        
+    </main>
+    
+    <footer>
+        <div class="cont-all" >
+            <p>Copyright 2022 © Recetas para ayer <br> Todos los derechos reservados</p>
+            <ul style="padding: 0;"> 
+                <li>Visita nuestras redes:  </li><br>
+                <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+            <p onclick="goUp()" id="to-top">Subir <i class="fa-solid fa-angles-up"></i></p>
+        </div>
+       
+    </footer>
+
+    <script>
+        // const upbtn = document.getElementById("#to-top");
+        function goUp(){
+            // $('html, body').animate({scrollTop:0}, 'slow');
+            window.scrollTo({top: 0, behavior: 'smooth'});
+            // document.body.scrollTop=0; //Safari??
+            // document.documentElement.scrollTop = 0;
+        }
+
+        // nav responsive
+        const despegable= document.querySelector('.animenu__btn');
+          const menuD=document.querySelector('.animenu__nav');
+
+          despegable.addEventListener('click', (e)=>{
+            despegable.classList.toggle("animenu__btn--active");
+            menuD.classList.toggle("animenu__nav--active");
+          });
+          
+          // Buscador
+          const search= document.querySelector('#cont-input');
+          const lupa= document.querySelector('#search-lupa');
+
+            lupa.addEventListener('click', (e)=>{
+              search.classList.toggle('appear');
+          })
+
+          const cancel=document.querySelector('#cancel');
+          const input= document.querySelector('#input');
+          
+          cancel.addEventListener('click', (e) => {
+              input.value='';
+          })
+    
+        // JS: Funcion para calificar estrellas : Me
+        let contador_estrellas;
+        function calificar(item){
+            contador_estrellas=item.id[8];
+            console.log(contador_estrellas)
+            let estrella = item.id.substring(0,8); 
+            for(let i=0;i<5;i++){
+                /*i=0 
+                if (i)
+                */
+               if(i< contador_estrellas){
+                   document.getElementById(estrella+(i+1)).style.color="orange";
+                }
+                else{
+                    document.getElementById(estrella+(i+1)).style.color="black";
+                }
+            }
+        }
+    </script>
+    <!-- <script>
+        const iconoMenu=document.querySelector('#icono-menu');
+        const menu=document.querySelector('#menu');
+
+        iconoMenu.addEventListener('click', (e) => {
+            
+            //Estilos para el menú y el body
+            menu.classList.toggle('active');
+            document.body.classList.toggle('opacity');
+
+            //Alternamos atributo src para el icon
+            const rutaActual = e.target.getAttribute('src');
+
+            if(rutaActual == 'img/icons/menu.png'){
+                e.target.setAttribute('src', 'img/Logos/image604745.png');
+            } else{
+                e.target.setAttribute('src', 'img/icons/menu.png');
+            }
+        }
+        );
+    </script> -->
+    <script>
+        /*Funcion para tachar ingredientes */
+        function tachar_ingrediente(item){
+            let numero = item.id.substring(0);  /*numero de ingrediente ej: ingrediente3*/
+            let nombre_ingrediente = document.getElementById("nombre_" + numero).innerText;
+            console.log(numero);
+            let hola = numero.strike();
+            console.log(hola);
+            console.log(nombre_ingrediente);
+            console.log(nombre_ingrediente.strike());
+           
+           if(item.checked){
+            document.getElementById("nombre_" + numero).innerHTML= nombre_ingrediente.strike();
+            }
+            else{
+                document.getElementById("nombre_" + numero).innerHTML= nombre_ingrediente;
+            }
+        }
+        /*Funcion para crear comentarios */
+        let contador_comentario = 1;
+        let comentario = ' ';
+        let nombre = ' ';
+        function crear_comentario(){
+            if(comentario != ' '){
+                $('#comentario'+ contador_comentario).append(
+                    '<div class ="img_usuario"><img src="img/icons/img_comments.png" alt="img_comentario"></div> <div class="contenedor_comentario"><p class="nombre_usuario">'+ nombre +'</p><p>'+ comentario +'</p></div>'
+                    );
+                contador_comentario++;
+                $('.comentarios').append(
+                    '<div  id="comentario'+ contador_comentario +'"class = "comentarios_receta"></div>'
+                    );
+            }
+        }
+        /*Minimo 3 comentarios */
+    </script>
+</body>
+</html>
