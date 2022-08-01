@@ -35,10 +35,11 @@
         </button>
       
         <ul class="animenu__nav">
-          <li><a href="#">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li>
             <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Categorías</a>
             <ul class="animenu__nav__dropdown">
+                <li><a href="">Internacionales</a></li>
               <li><a href="">Cumpleaños</a></li>
               <li><a href="">Días de flojera</a></li>
               <li><a href="">Recetas patrias</a></li>
@@ -48,29 +49,30 @@
               <li><a href="">Como lo hacía mi abuela</a></li>
               <li><a href="">Vegetariano</a></li>
               <li><a href="">Desayunos</a></li>
-              <li style="font-weight: bold;" ><a href="">Ver más categorías</a></li>
+              <li style="font-weight: bold;" ><a href="categorias-all.html">Ver más categorías</a></li>
             </ul>
           </li>
           
-          <li><a href="#">Envianos tus recetas</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="subitureceta.html">Envianos tus recetas</a></li>
+          <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
           <li>
-            <a href="#" class="animenu__nav__hasDropdown" aria-haspopup="true">Mi perfil</a>
+            <a href="ingresar-registrarse.html" class="animenu__nav__hasDropdown" aria-haspopup="true">
+                <img class="nav-icon" src="img/icons/profile-white.jpg" alt="">
+            </a>
             <ul class="animenu__nav__dropdown" aria-label="submenu" role="menu">
               <li><a href="#" role="menuitem">Colecciones</a></li>
-              <li><a href="#" role="menuitem">Mis recetas</a></li>
               <li><a href="#" role="menuitem">Editar perfil</a></li>
               <li><a href="#" role="menuitem">Cerrar sesión</a></li>
             </ul>
           </li>
           <li>
             <div href="#" id="search-lupa">
-              <img style="width:17px;" src="img/icons/lupa-white.png" alt="">
+              <img class="nav-icon" src="img/icons/lupa-white.png" alt="">
             </div>
             <div class="search">
               <div id="cont-input" class="cont-input">
                 <input type="text" placeholder="¿Qué buscas?" id="input">
-                <img style="width:17px;" id="cancel" src="../img/icons/cancel.png" alt="">
+                <img class="nav-icon" id="cancel" src="img/icons/cancel.png" alt="">
               </div>             
             </div>
           </li>
@@ -192,17 +194,25 @@
     
     <footer>
         <div class="cont-all" >
-            <p>Copyright 2022 © Recetas para ayer <br> Todos los derechos reservados</p>
-            <ul style="padding: 0;"> 
+            <ul class="ul-copy"> 
+                <li>Copyright 2022 © Recetas para ayer <br> Todos los derechos reservados <br><br></li>
                 <li>Visita nuestras redes:  </li><br>
                 <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
                 <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
             </ul>
+            
+            <form action="" class="footer-span">
+                <label for="">
+                    Envianos un mensaje:
+                    <input type="email" placeholder="E-mail">
+                    <textarea name="textarea" maxlength="100" rows="3" cols="21" placeholder="¿Qué opinás?"></textarea>
+                    <button>Enviar</button>
+                </label>
+            </form>
             <p onclick="goUp()" id="to-top">Subir <i class="fa-solid fa-angles-up"></i></p>
         </div>
-       
     </footer>
 
     <script>
