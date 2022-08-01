@@ -1,38 +1,27 @@
-/* body {
-  font-size: large;
-  background-color: rgba(234, 179, 157, 0.851);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+
 .h1-intro {
   font-size: xx-large;
 }
 .intro {
   color: rgb(69, 4, 4);
-  /*  background-color: rgb(225, 155, 106); */
   height: 80%;
-  font-size: 20px;
-  width: 80%;
+  font-size: 21px;
+  width: 70%;
   margin: 0 auto;
-  font-family: "poppins";
-  /*  -webkit-box-shadow: 5px 5px 33px 6px rgba(0, 0, 0, 0.54);
-  box-shadow: 5px 5px 33px 6px rgba(0, 0, 0, 0.54); */
+  /* font-family: "poppins"; */
+  font-family: 'Amiri', serif;
   -webkit-box-shadow: 0px 0px 12px -2px #000000;
   box-shadow: 0px 0px 12px -2px #000000;
 
-  padding: 25px;
+  padding: 50px;
   border-radius: 20px;
+  background-color: var(--azul);
 }
-/* 
-img {
-  max-width: 1;
-  max-height: 50%;
-  border-radius: 20px;
-  display: flex;
+.intro p, .sn-center p{
+  text-indent: 40px;
 }
- */
+
 .sn-top {
-  background-color: aqua;
-  /* width: 80%; */
   height: 20%;
   margin: 80px;
   display: flex;
@@ -40,7 +29,6 @@ img {
 
 .perfil-card {
   background-color: #d3d1d1;
-  /* height: 30rem; */
   width: 18rem;
   border-radius: 15px;
   border-bottom: 1px solid rgb(69, 4, 4);
@@ -50,9 +38,7 @@ img {
   box-shadow: 0px 0px 5px 1px #000000;
 }
 .perfil-card-cont {
-  /*  background-color: brown; */
   margin: 40px auto;
-  /*  margin: 40px 0; */
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
   gap: 0.7rem;
@@ -60,7 +46,6 @@ img {
 }
 
 .perfil-card-img-cont {
-  background-color: deeppink;
   height: 66%;
   overflow: hidden;
 }
@@ -83,15 +68,13 @@ img {
 }
 
 .sn-center {
-  color: rgb(69, 4, 4);
-  /*  background-color: rgb(225, 155, 106); */
+  background-color: var(--azul);
   height: 80%;
   font-size: 20px;
   width: 80%;
   margin: 0 auto;
-  font-family: "poppins";
-  /*  -webkit-box-shadow: 5px 5px 33px 6px rgba(0, 0, 0, 0.54);
-  box-shadow: 5px 5px 33px 6px rgba(0, 0, 0, 0.54); */
+  text-align: center;
+  font-family: 'Amiri', serif;
   -webkit-box-shadow: 0px 0px 12px -2px #000000;
   box-shadow: 0px 0px 12px -2px #000000;
 
@@ -105,11 +88,6 @@ img {
   /*gap: 0.7rem;*/
 }
 
-/* .intro-2,
-.intro {
-  width: 80%;
-}
- */
 .perfil-card h3 {
   margin-bottom: 10px;
   text-align: right;
@@ -118,13 +96,16 @@ img {
 .perfil-card-desc {
   padding: 20px;
   font-family: "poppins", sans-serif;
-  /*  text-align: center; */
 }
 
 .perfil-card-desc p {
   text-align: left;
   line-height: 95%;
+  font-family: 'Amiri', serif;
 }
+/* .perfil-card-desc a{
+  margin: auto 0;
+} */
 
 .linkedin-logo {
   width: 50px;
