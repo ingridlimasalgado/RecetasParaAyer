@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 /* font-family: 'Roboto Condensed', sans-serif; */
 /* font-family: 'PT Sans Narrow', sans-serif; */
@@ -20,7 +20,7 @@
 }
 body, nav{
     background-color: var(--fondo);
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Amiri', serif;
 }
 ul{
     list-style: none;
@@ -37,7 +37,11 @@ ul{
     width: 150px;
 }
 #nombre-pagina{
-    font-size: 4em;
+    font-size: 5em;
+    /* color: var(--bordo); */
+    color: black;
+    font-family: 'Sacramento', cursive; 
+    text-shadow: 5px 3px 1px var(--borde);
 }
 
 .espacio100vh{
@@ -409,7 +413,7 @@ article.cont-tip, article img{
     background-color: var(--fondo);
     border: 1px solid var(--borde);
     border-radius: 10px;
-    font-family: poppins; 
+    font-family: 'poppins'; 
 
     background-color: var(--bordo);
     color: var(--fondo);
@@ -556,7 +560,7 @@ footer{
     color: var(--fondo);
     background-color: var(--bordo);
     
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Amiri', serif;
 
     position: absolute;
     bottom: 0;
