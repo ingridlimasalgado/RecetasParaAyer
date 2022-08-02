@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/97fdee9dd5.js" crossorigin="anonymous"></script>
     <title>Envianos tu receta</title>
 </head>
-<body >
+<body>
     <div id="top-redes">
         <ul>
             <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
@@ -70,7 +70,7 @@
             </div>
             <div class="search">
               <div id="cont-input" class="cont-input">
-                <input type="text" placeholder="¿Qué buscas?" id="input">
+                <input type="text" scas?" id="input">
                 <img class="nav-icon" id="cancel" src="img/icons/cancel.png" alt="">
               </div>             
             </div>
@@ -87,15 +87,17 @@
 
         <div class="instru">
             <p>
-                <p class="info" >Información a tener en cuenta al enviarnos tu receta :)</p>
-                Nuestro equipo revisa todos los datos ingresados para registrar que este escrito correctamente y verificar que tu receta no sea repetida ya en la pagina. <br>
-                esperamos ver tu receta y compartirla con el resto! <br>
+                <p class="info" >Información a tener en cuenta al enviarnos tu receta</p>
+                Nuestro equipo revisa todos los datos ingresados para registrar que este correctamente y verificar que tu receta no sea repetida ya en la página. <br>
+                Esperamos ver tu receta y compartirla con el resto! <br>
                 <img src="img/img-formulario/minion.png" class="mini" alt="">
             </p>
         </div>
 
 
         <div class="enviar-receta">
+
+            <!--
             <form action="" class="body-z">
                     <div class="field">
                         <input type="text" required>
@@ -110,7 +112,7 @@
                         <label for="">Nombre de la receta</label>
                     </div>
                     <div class="field">
-                        <input type="text" placeholder="Contraseña" required>
+                        <input type="text" eña" required>
                         <label for="">Ingredientes</label>
                     </div>
                     <div class="field">
@@ -145,7 +147,88 @@
                     <div class="field">
                         <input type="submit" value="Enviar">
                     </div>
-            </form>
+            </form>-->
+
+
+                    <div class="form-interno">
+                        <form action="#" class="ingresar" id="">                            
+                            
+                            <div class="campo">
+                                <label for="">Su nombre</label>
+                                <input type="text"  required>
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="">Nombre de la receta</label>
+                                <input type="text"  required>
+                            </div>
+                            
+                            
+                        </form>
+
+                        <form action="" class="registrar">
+                            <div class="campo">
+                                <label for="">Porciones</label>
+                                <input type="number"  min="1" >
+                            </div>
+
+                            <select name="" id="" class="campos">
+                                <option value="Fácil">Fácil</option>
+                                <option value="Medio">Medio</option>
+                                <option value="Avanzado">Avanzado</option>
+                            </select> 
+                            
+                            
+                            <div class="campo">
+                                <label for="">Minutos</label>
+                                <input type="number"  min="0" required>
+                            </div>
+                        </form>
+
+
+
+                    </div>
+                    <form action="#" class="registrar1" id="">
+                            
+                                <div class="campo">
+                                    <label for="" >Preparación</label>
+                                    <textarea class="campos" name="" id="" cols="30" rows="10"></textarea required>
+                                </div>
+
+                            
+
+                                <div class="campo">
+                                    <label for="">Ingredientes</label>
+                                    <textarea class="campos" name="" id="" cols="30" rows="10"></textarea required>
+                                </div>
+                                
+
+                                <div class="campo">
+                                    <label for="">Tips</label>
+                                    <textarea class="campos" name="" id="" cols="30" rows="10"></textarea >
+                                </div>
+
+                                <div class="campo">
+                                    <label for="">Historia de la receta/cuentanos sobre tu receta</label>
+                                    <textarea class="campos" name="" id="" cols="30" rows="10"></textarea >
+                                </div>
+
+
+                                <div class="final">
+                                <div class="campo">   
+                                    <input type="checkbox" required>                             
+                                    <label for="">He leído y acepto la política de privacidad</label>
+                                </div>
+
+                                <div class="field">
+                                    <input type="submit" value="Enviar">
+                                </div>
+                                </div>
+                    </form>
+
+
+
+            
         </div>
 
     </main>
