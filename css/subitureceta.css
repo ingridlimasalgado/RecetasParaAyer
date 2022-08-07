@@ -18,11 +18,12 @@
 
 .instru {
     max-width: 3900px;
-    height: 20%;
+    height: 450px;
     background: var(--color1);
     padding: 30px;
     border-radius: 10px;
-    margin: 80px;
+    margin: 160px;
+    margin-top: 50px;
     font-size: 18px;
     padding: 50px;
     background: #D3D1D1;
@@ -40,12 +41,13 @@
 .mini {
     width: 100px;
     margin-top: 28px;
+    float: right;
 }
 
 .enviar-receta {
     /**/
     max-width: 3900px;
-    height: 20%;
+    height: 1400px;
     background: var(--color1);
     padding: 30px;
     border-radius: 10px;
@@ -54,7 +56,7 @@
     padding: 50px;
     background-color: #E5D6B2;
 }
-
+/*
 .body-z {
     display: grid;
     height: 100%;
@@ -91,6 +93,43 @@ form .field input[type="submit"]:hover{
     border: none;
     cursor: pointer;
     background: var(--bordo);
+}*/
+
+
+
+.enviar-receta .form-interno {
+    display: flex;/**/
+    width: 800px;
+}
+
+.enviar-receta .form-interno form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265,1.55);
+}
+
+.form-interno form .campo{
+    height: 40px;
+    width: 300px;
+    margin-top: 50px;
+}
+
+
+.form-interno form .campos{
+    height: 40px;
+    width: 300px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.campos, option, value {
+    font-size: 22px;
+    padding-left: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.campos option {
+    font-size: 15px;
 }
 
 
@@ -101,5 +140,456 @@ form .field input[type="submit"]:hover{
 
 
 
+/*.registrar {
+    display: flex;
+}
 
 
+celu:380px
+tablet: 680px
+
+notebook: 1200px*/
+
+
+.form-interno form .campo input{
+    height: 40px;
+    width: 300px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+    display: block;
+}
+
+
+
+.form-interno form .campo input:focus {
+    border-color: #704545;
+}
+
+
+
+.final .campo input[type="checkbox"]{
+    width: 20px;
+    padding: 10px 20%;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-top: 60px;
+}
+
+label {
+    font-size: 22px;
+    padding: 20px;
+}/**/
+
+
+
+
+.registrar {
+    display: flex;
+}
+
+.form-interno .registrar .campo input{
+    height: 40px;
+    width: 100px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+
+.registrar label {
+    padding: 0;
+}
+
+.form-interno .registrar .campos {
+    height: 40px;
+    width: 100px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+
+
+
+
+/*.registrar1 input {
+    height: 100px;
+    width: 600px;
+    outline: none;
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+    display: block;
+}*/
+
+.registrar1 input:focus {
+    border-color: #704545;
+}
+
+
+
+.field input[type="submit"]{
+    color: var(--fondo);
+    font-size: 22px;
+    font-weight: 600;
+    /*padding: 10px 20%;*/
+    border: none;
+    cursor: pointer;
+    background: var(--color1);
+    border-radius: 2rem;
+    margin-top: 60px;
+    transition: all 0.4s ease;
+
+    width: 300px;
+    height: 40px;
+
+    outline: none;
+    border-bottom-width: 2px;
+}
+
+.field input[type="submit"]:hover{
+    color: var(--color1);
+    font-size: 22px;
+    font-weight: 600;
+    /*padding: 10px 20%;*/
+    border: none;
+    cursor: pointer;
+    background: var(--fondo);
+    border-radius: 2rem;
+    margin-top: 60px;
+    transition: all 0.4s ease;
+
+    width: 300px;
+    height: 40px;
+
+    outline: none;
+    border-bottom-width: 2px;
+
+    box-shadow: 0 4px 4px var(--color1);
+
+
+}
+
+.registrar1 input[type="checkbox"]{
+    width: 20px;
+    padding: 10px 20%;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+    margin-top: 60px;
+}
+
+.registrar1 .campos{
+    height: 100px;
+    width: 600px;
+    outline: none;
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+    display: block;
+}
+
+.registrar1 .campo{
+    height: 100px;
+    width: 600px;
+    margin-top: 50px;
+}
+
+.final .field{
+    height: 40px;
+    width: 300px;
+    margin-top: 100px;
+}
+
+.final {
+    margin-top: 60px;
+    display: flex;
+}
+
+/*
+.registrar1 label {
+    padding: 450px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 680px) {
+    .instru {
+        max-width: 3900px;
+        height: 420px;
+        background: var(--color1);
+        padding: 30px;
+        border-radius: 10px;
+        margin: 80px;
+        padding: 50px;
+        background: #D3D1D1;
+        box-shadow: 0 8px 20px var(--acetato);
+        font-size: 14.5px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .info {
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    
+    .mini {
+        width: 60px;
+        margin-top: 28px;
+    }
+
+    .enviar-receta {
+        /**/
+        max-width: 3900px;
+        height: 1200px;
+        background: var(--color1);
+        border-radius: 10px;
+        margin: 10px;
+        font-size: 18px;
+        padding: 50px;
+        background-color: #E5D6B2;
+    }
+
+    /*label {
+        margin-top: 200px;
+    }
+
+    .input {
+        margin-top: 100px;
+    }*/
+
+    .form-interno form .campo{
+        height: 50px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+
+
+    .enviar-receta .form-interno {
+        display: flex;/**/
+        width: 450px;
+    }
+
+    label {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+
+
+    .form-interno form .campo input{
+        height: 30px;
+        width: 180px;
+        outline: none;
+        padding-left: 15px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        border-bottom-width: 2px;
+        transition: all 0.4s ease;
+        display: block;
+    }
+    
+    .form-interno form .campo .campos{
+        height: 30px;
+        width: 180px;
+        outline: none;
+        padding-left: 15px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        border-bottom-width: 2px;
+        transition: all 0.4s ease;
+        display: block;
+    }
+
+    .form-interno form .campos{
+        height: 30px;
+        width: 180px;
+        margin-top: 50px;
+        border: none;
+        border-radius: 5px;
+    }
+    .campos, option, value {
+        font-size: 18px;
+        padding-left: 18px;
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
+    
+    .campos option {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+
+    .instru {
+        max-width: 3900px;
+        height: 450px;
+        background: var(--color1);
+        padding: 30px;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 50px;
+        background: #D3D1D1;
+        box-shadow: 0 8px 20px var(--acetato);
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .info {
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    
+    .mini {
+        width: 50px;
+        margin-top: 28px;
+    }
+
+    .enviar-receta {
+        /**/
+        max-width: 3900px;
+        height: 1200px;
+        background: var(--color1);
+        border-radius: 10px;
+        margin: 10px;
+        font-size: 18px;
+        padding: 50px;
+        background-color: #E5D6B2;
+    }
+
+    /*label {
+        margin-top: 200px;
+    }
+
+    .input {
+        margin-top: 100px;
+    }*/
+
+    .form-interno form .campo{
+        height: 50px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+
+
+    .enviar-receta .form-interno {
+        display: block;/**/
+        width: 800px;
+    }
+
+    label {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+
+
+    .form-interno form .campo input{
+        height: 30px;
+        width: 180px;
+        outline: none;
+        padding-left: 15px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        border-bottom-width: 2px;
+        transition: all 0.4s ease;
+        display: block;
+    }
+    
+    .form-interno form .campo .campos{
+        height: 30px;
+        width: 180px;
+        outline: none;
+        padding-left: 15px;
+        font-size: 14px;
+        border-radius: 5px;
+        border: 1px solid lightgrey;
+        border-bottom-width: 2px;
+        transition: all 0.4s ease;
+        display: block;
+    }
+
+    .form-interno form .campos{
+        height: 30px;
+        width: 180px;
+        margin-top: 50px;
+        border: none;
+        border-radius: 5px;
+    }
+    .campos, option, value {
+        font-size: 18px;
+        padding-left: 18px;
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
+    
+    .campos option {
+        font-size: 18px;
+    }
+}
