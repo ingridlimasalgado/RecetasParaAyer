@@ -19,8 +19,7 @@
     </div>
     <header>
         <div class="logos">
-            <img id="logo-pagina" src="img/Logos/image604745.png" alt="">
-            <h1 id="nombre-pagina">Recetas para ayer</h1>
+            <img id="logo-principal" src="img/Logos/recetasparaayer.png" alt="">
         </div>
     </header>
 
@@ -55,11 +54,11 @@
           <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
           <li>
             <a href="ingresar-registrarse.html" class="animenu__nav__hasDropdown" aria-haspopup="true">
-                <img class="nav-icon" src="img/icons/profile-white.jpg" alt="">
+                Iniciar sesión
+                <img class="nav-icon session-opened" src="img/icons/profile-white.jpg" alt="">
             </a>
-            <ul class="animenu__nav__dropdown" aria-label="submenu" role="menu">
-              <li><a href="#" role="menuitem">Colecciones</a></li>
-              <li><a href="#" role="menuitem">Editar perfil</a></li>
+            <ul class="animenu__nav__dropdown session-opened" aria-label="submenu" role="menu">
+              <li><a href="#" role="menuitem">Guardadas</a></li>
               <li><a href="#" role="menuitem">Cerrar sesión</a></li>
             </ul>
           </li>
@@ -89,6 +88,7 @@
             
             <div class="recipe-card">
                 <div class="recipe-card-cont-img">
+                    <span class="fa-solid fa-bookmark"></span>
                     <img src="img/recetas/5m_omelet.jpg" alt="">
                 </div>
 
@@ -109,8 +109,10 @@
                 </div>
                 
             </div>
+
             <div class="recipe-card">
                 <div class="recipe-card-cont-img">
+                    <span class="fa-solid fa-bookmark"></span>
                     <img src="img/recetas/5m_smoothie.jpg" alt="">
                 </div>
 
@@ -133,6 +135,7 @@
             </div>
             <div class="recipe-card">
                 <div class="recipe-card-cont-img">
+                    <span class="fa-solid fa-bookmark"></span>
                     <img src="img/recetas/5m_tabule.jpg" alt="">
                 </div>
 
@@ -155,6 +158,7 @@
             </div>
             <div class="recipe-card">
                 <div class="recipe-card-cont-img">
+                    <span class="fa-solid fa-bookmark"></span>
                     <img src="img/recetas/receta-ejemplo-5.jpg" alt="">
                 </div>
 
@@ -177,6 +181,7 @@
             </div>
             <div class="recipe-card">
                 <div class="recipe-card-cont-img">
+                    <span class="fa-solid fa-bookmark"></span>
                     <img src="img/recetas/receta-ejemplo-3.jpg" alt="">
                 </div>
 
@@ -199,6 +204,7 @@
             </div>
             <div class="recipe-card">
                 <div class="recipe-card-cont-img">
+                    <span class="fa-solid fa-bookmark"></span>
                     <img src="img/recetas/receta-ejemplo-1.jpg" alt="">
                 </div>
 
@@ -263,16 +269,33 @@
           const search= document.querySelector('#cont-input');
           const lupa= document.querySelector('#search-lupa');
 
-            lupa.addEventListener('click', (e)=>{
-              search.classList.toggle('appear');
-          })
+        lupa.addEventListener('click', (e)=>{
+            search.classList.toggle('appear');
+        })
 
-          const cancel=document.querySelector('#cancel');
-          const input= document.querySelector('#input');
+        const cancel=document.querySelector('#cancel');
+        const input= document.querySelector('#input');
           
-          cancel.addEventListener('click', (e) => {
-              input.value='';
-          })
+        cancel.addEventListener('click', (e) => {
+            input.value='';
+        })
+
+        // Bookmark = guardado
+        const bookmark =document.getElementsByClassName('fa-bookmark');
+
+        for (const i of bookmark) {
+
+            i.addEventListener('click', e=> {
+                if(i.style.color=="black"){
+                    i.style.color="orange";
+
+                }else{ //Ejecuta esto en el primer click
+                    i.style.color="black";
+                }
+            });
+        }
+        console.log("terminó el for")
+
     </script>
 </body>
 </html>

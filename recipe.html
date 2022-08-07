@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index2</title>
+    <title>Receta</title>
     <link rel="stylesheet" href="css/estilos-john.css">
     <link rel="stylesheet" href="css/estilos.css">
     
@@ -22,8 +22,7 @@
     </div>
     <header>
         <div class="logos">
-            <img id="logo-pagina" src="img/Logos/image604745.png" alt="">
-            <h1 id="nombre-pagina">Recetas para ayer</h1>
+            <img id="logo-principal" src="img/Logos/recetasparaayer.png" alt="">
         </div>
     </header>
 
@@ -58,11 +57,11 @@
           <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
           <li>
             <a href="ingresar-registrarse.html" class="animenu__nav__hasDropdown" aria-haspopup="true">
-                <img class="nav-icon" src="img/icons/profile-white.jpg" alt="">
+                Iniciar sesión
+                <img class="nav-icon session-opened" src="img/icons/profile-white.jpg" alt="">
             </a>
-            <ul class="animenu__nav__dropdown" aria-label="submenu" role="menu">
-              <li><a href="#" role="menuitem">Colecciones</a></li>
-              <li><a href="#" role="menuitem">Editar perfil</a></li>
+            <ul class="animenu__nav__dropdown session-opened" aria-label="submenu" role="menu">
+              <li><a href="#" role="menuitem">Guardadas</a></li>
               <li><a href="#" role="menuitem">Cerrar sesión</a></li>
             </ul>
           </li>
@@ -217,12 +216,9 @@
     </footer>
 
     <script>
-        // const upbtn = document.getElementById("#to-top");
+
         function goUp(){
-            // $('html, body').animate({scrollTop:0}, 'slow');
             window.scrollTo({top: 0, behavior: 'smooth'});
-            // document.body.scrollTop=0; //Safari??
-            // document.documentElement.scrollTop = 0;
         }
 
         // nav responsive
@@ -268,27 +264,6 @@
             }
         }
     </script>
-    <!-- <script>
-        const iconoMenu=document.querySelector('#icono-menu');
-        const menu=document.querySelector('#menu');
-
-        iconoMenu.addEventListener('click', (e) => {
-            
-            //Estilos para el menú y el body
-            menu.classList.toggle('active');
-            document.body.classList.toggle('opacity');
-
-            //Alternamos atributo src para el icon
-            const rutaActual = e.target.getAttribute('src');
-
-            if(rutaActual == 'img/icons/menu.png'){
-                e.target.setAttribute('src', 'img/Logos/image604745.png');
-            } else{
-                e.target.setAttribute('src', 'img/icons/menu.png');
-            }
-        }
-        );
-    </script> -->
     <script>
         /*Funcion para tachar ingredientes */
         function tachar_ingrediente(item){

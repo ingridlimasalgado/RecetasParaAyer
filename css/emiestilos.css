@@ -23,24 +23,27 @@
 
 .sn-top {
   height: 20%;
-  margin: 80px;
+  margin: 35px auto;
   display: flex;
 }
 
 .perfil-card {
   background-color: #d3d1d1;
-  width: 18rem;
+  width: 15rem;
+  height: 700px;
   border-radius: 15px;
   border-bottom: 1px solid rgb(69, 4, 4);
   border-right: 1px solid rgb(69, 4, 4);
   overflow: hidden;
   transition-delay: 0.2s;
   box-shadow: 0px 0px 5px 1px #000000;
+  margin: 0 auto;
 }
 .perfil-card-cont {
   margin: 40px auto;
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
+  display: grid; 
+  /* keeeee */
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 0.7rem;
   width: 95%;
 }
@@ -58,10 +61,11 @@
 }
 
 .img-1 img {
-  height: 100%;
-  width: 100%;
-  display: inline-block;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
 }
+
 .img-2 {
   height: 50%;
   /*  width: 50%; */
@@ -82,11 +86,6 @@
   border-radius: 20px;
 }
 
-.sn-bottom {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  /*gap: 0.7rem;*/
-}
 
 .perfil-card h3 {
   margin-bottom: 10px;
@@ -94,6 +93,7 @@
 }
 
 .perfil-card-desc {
+  
   padding: 20px;
   font-family: "poppins", sans-serif;
 }
@@ -102,12 +102,26 @@
   text-align: left;
   line-height: 95%;
   font-family: 'Amiri', serif;
+  font-size: 20px;
 }
-/* .perfil-card-desc a{
-  margin: auto 0;
-} */
+
 
 .linkedin-logo {
   width: 50px;
   margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .intro {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .perfil-card{
+    margin: 0;
+    margin-top: 10px;
+    width: 76vw;
+  }
+
+
 }
